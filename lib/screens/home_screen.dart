@@ -1,5 +1,6 @@
 import 'package:converter_and_more/screens/first_point_screen.dart';
 import 'package:converter_and_more/screens/second_point_screen.dart';
+import 'package:converter_and_more/screens/third_point_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -50,7 +51,13 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
                 width: MediaQuery.of(context).size.width - 40,
                 child:
-                    RaisedButton(onPressed: () {}, child: Text("Third Point"))),
+                    RaisedButton(onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ThirdPointScreen()),
+                      );
+                    }, child: Text("Third Point"))),
             Container(
                 width: MediaQuery.of(context).size.width - 40,
                 child:
