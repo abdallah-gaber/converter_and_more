@@ -23,9 +23,11 @@ class _SecondPointScreenState extends State<SecondPointScreen> {
         padding: EdgeInsets.all(20),
         child: ListView(
           children: [
-            Expanded(
-                child: Text(
-                    "Enter 2 sentences and tap Check to see if they are anagrams or not.")),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              child: Text(
+                  "Enter 2 sentences and tap Check to see if they are anagrams or not."),
+            ),
             SizedBox(
               height: 30,
             ),
